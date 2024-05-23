@@ -1,0 +1,27 @@
+{
+    "$schema": "https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json",
+    "runtime.version": "LuaJIT",
+    "runtime.path": [
+            "?.lua",
+            "?/init.lua",
+            "/usr/share/awesome/lib/?.lua",
+            "/home/hebedite/.config/luarocks/share/lua/5.4/"
+    ],
+    "workspace": {
+        "library": [
+            "?.lua",
+            "?/init.lua",
+            "lib/awesome_meta/?.lua",
+            "/usr/share/awesome/lib/"
+        ],
+        "maxPreload": 8000,
+        "preloadFileSize": 5000,
+        "checkThirdParty": false
+    },
+    "diagnostics": {
+        "disable": [ "missing-fields", "lowercase-global", "unused-local" ]
+    },
+    "hint": {
+        "enable": true
+    }
+}

@@ -1,0 +1,3 @@
+[submodule "lib/awesome_meta"]
+	path = lib/awesome_meta
+	url = https://github.com/kosorin/awesome-code-doc
