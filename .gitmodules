@@ -8,7 +8,7 @@
 
 [submodule "config/awesome/modules/lain"]
     path = config/awesome/modules/lain
-    url = https://github.com/
+    url = https://github.com/lcpz/lain.git
 
 [submodule "config/awesome/modules/rubato"]
     path = config/awesome/modules/rubato
