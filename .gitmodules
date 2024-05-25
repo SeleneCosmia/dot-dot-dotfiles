@@ -14,5 +14,6 @@
     path = config/awesome/modules/rubato
     url = https://github.com/andOrlando/rubato.git
 
-#[submodule ".config/awesome/modules"]
-#    path = .config/awesome/modules
+[submodule "config/awesome/modules/layout-machi"]
+    path = config/awesome/modules/layout-machi
+    url = https://github.com/xinhaoyuan/layout-machi.git

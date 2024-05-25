@@ -5,7 +5,9 @@
             "?.lua",
             "?/init.lua",
             "modules/?/init.lua",
+            "themes/?/?.lua",
             "/usr/share/awesome/lib/?.lua",
+            "/usr/share/awesome/themes/?/?.lua",
             "/home/hebedite/.config/luarocks/share/lua/5.4/"
     ],
     "workspace": {
@@ -13,6 +15,7 @@
             "?.lua",
             "?/init.lua",
             "lib/awesome_meta/?.lua",
+            "modules/?/?.lua",
             "/usr/share/awesome/lib/?.lua"
         ],
         "maxPreload": 8000,
