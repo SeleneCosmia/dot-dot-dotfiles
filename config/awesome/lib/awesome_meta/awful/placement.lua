@@ -16,8 +16,8 @@
 ---@field attach boolean # When the parent geometry (like the screen) changes, re-apply the placement function. This will add a `detach_callback` function to the drawable. Call this to detach the function. This will be called automatically when a new attached function is set.
 ---@field update_workarea boolean # If attach is true, also update the screen workarea.
 
----@class _awful.placement
-local M
+---@class awful.placement
+local M = {}
 
 ---Restore the geometry.
 ---@param drawable unknown
@@ -207,5 +207,3 @@ function M.next_to(drawable, args) end
 ---@param args? table
 ---@return geometry
 function M.skip_fullscreen(drawable, args) end
-
-return M

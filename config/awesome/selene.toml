@@ -1,0 +1,17 @@
+std = "awesome"
+
+exclude = [
+"lib/*",
+"themes/*"
+]
+
+[rules]
+global_usage = "allow"
+multiple_statements = "allow"
+incorrect_standard_library_use = "allow"
+mixed_table = "allow"
+shadowing = "allow"
+unused_variable = "allow"
+unused_local = "allow"
+undefined_variable = "allow"
+undefined_global = "allow"

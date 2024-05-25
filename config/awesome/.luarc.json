@@ -4,6 +4,7 @@
     "runtime.path": [
             "?.lua",
             "?/init.lua",
+            "modules/?/init.lua",
             "/usr/share/awesome/lib/?.lua",
             "/home/hebedite/.config/luarocks/share/lua/5.4/"
     ],
@@ -12,14 +13,25 @@
             "?.lua",
             "?/init.lua",
             "lib/awesome_meta/?.lua",
-            "/usr/share/awesome/lib/"
+            "/usr/share/awesome/lib/?.lua"
         ],
         "maxPreload": 8000,
-        "preloadFileSize": 5000,
+        "preloadFileSize": 1000,
         "checkThirdParty": false
     },
     "diagnostics": {
-        "disable": [ "missing-fields", "lowercase-global", "unused-local" ]
+        "disable": [
+            "missing-fields",
+            "lowercase-global",
+            "unused-local"
+        ],
+        "globals": [
+            "awesome",
+            "awful",
+            "beautiful",
+            "screen",
+            "tag"
+        ]
     },
     "hint": {
         "enable": true

@@ -7,7 +7,7 @@ local gears     = require 'gears'
 local awful     = require 'awful'
 local client    = require 'client'
 local tag       = awful.tag
-local screen    = awful.screen
+local screen    = { screen = screen }
 -------------------------------|| widget related --|
 local wibox     = require 'wibox'
 local naughty   = require 'naughty'
@@ -26,17 +26,19 @@ naughty.connect_signal("request::display_error", function(message, startup)
     }
 end)
 
-
 -- Theme loading ~~
 local beautiful = require 'beautiful'
+
 
 local pretty = {
      plain = { os.getenv('XDG_CONFIG_HOME') .. '/awesome/themes/default/theme.lua' }
 }
 
 if not beautiful.init(pretty.plain) then
-    beautiful.init(gears.filesystem.get_themes_dir .. 'deafault/theme.lua')
+    beautiful.init(gears.filesystem.get_themes_dir .. 'default/theme.lua')
 end
+
+local bling = require 'bling'
 
 SUPER = 'Mod4'
 
@@ -239,9 +241,7 @@ awful.keyboard.append_global_keybindings({
               {description = "lua execute prompt", group = "awesome"}),
     awful.key({ SUPER,           }, "Return", function () awful.spawn('wezterm') end,
               {description = "open a terminal", group = "launcher"}),
-    awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
-              {description = "run prompt", group = "launcher"}),
-    awful.key({ modkey }, "p", function() menubar.show() end,
+    awful.key({ SUPER }, "p", function() menubar.show() end,
               {description = "show the menubar", group = "launcher"}),
 })
 
@@ -481,7 +481,8 @@ ruled.client.connect_signal("request::rules", function()
 
         }
     }
-end)]]
+]]
+end)
 
 client.connect_signal("request::titlebars", function(c)
     -- buttons for the titlebar
