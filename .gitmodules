@@ -1,3 +1,18 @@
-[submodule "lib/awesome_meta"]
-	path = lib/awesome_meta
-	url = https://github.com/kosorin/awesome-code-doc
+[submodule "config/awesome/lib/awesome_meta"]
+    path = config/awesome/lib/awesome_meta
+    url = https://github.com/kosorin/awesome-code-doc
+
+[submodule "config/awesome/modules/bling"]
+    path = config/awesome/modules/bling
+    url = https://github.com/BlingCorp/bling.git
+
+[submodule "config/awesome/modules/lain"]
+    path = config/awesome/modules/lain
+    url = https://github.com/
+
+[submodule "config/awesome/modules/rubato"]
+    path = config/awesome/modules/rubato
+    url = https://github.com/andOrlando/rubato.git
+
+#[submodule ".config/awesome/modules"]
+#    path = .config/awesome/modules
